@@ -7,7 +7,7 @@
 
 <script>
 import router from "./router/index";
-import MainTabBar from "./components/content/MainTabBar.vue";
+import MainTabBar from "./components/content/maintabbar/MainTabBar.vue";
 
 export default {
   name: "App",
@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import "./assets/css/base.css";
 </style>
 

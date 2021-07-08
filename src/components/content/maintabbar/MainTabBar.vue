@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import TabBar from "../common/tarbar/TabBar.vue";
-import TabBarItem from "../common/tarbar/TabBarItem";
+import TabBar from "../../common/tarbar/TabBar.vue";
+import TabBarItem from "../../common/tarbar/TabBarItem";
 
 export default {
   name: "MainTabBar",
@@ -55,5 +55,5 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 </style>

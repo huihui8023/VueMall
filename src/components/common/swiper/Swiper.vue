@@ -232,7 +232,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #swiper {
   overflow: hidden;
   position: relative;
@@ -263,6 +263,6 @@ export default {
 }
 
 .indi-item.active {
-  background-color: rgba(212, 62, 46, 1);
+  background-color: rgb(212, 62, 46);
 }
 </style>

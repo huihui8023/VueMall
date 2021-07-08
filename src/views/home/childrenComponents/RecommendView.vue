@@ -23,13 +23,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .Recommend {
   display: flex;
   width: 100%;
   text-align: center;
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 12px;
   border-bottom: 10px solid rgba(92, 92, 92, 0.281);
 }
 .Recommenditem {
