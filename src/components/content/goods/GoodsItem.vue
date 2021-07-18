@@ -1,6 +1,6 @@
 .<template>
-  <div class="goodsitem">
-    <img :src="goodsItem.show.img" alt="" />
+  <div class="goodsitem" @click="itemClick">
+    <img :src="isShow" alt="" @load="imgLoad" />
     <p>{{ goodsItem.title }}</p>
     <span class="price">{{ goodsItem.price }}</span>
     <span class="collection">⭐{{ goodsItem.cfav }}</span>
@@ -16,6 +16,31 @@ export default {
       default() {
         return {};
       },
+    },
+  },
+  methods: {
+    imgLoad() {
+      /**
+       * 根据不同的路由发送不同的事件总线
+       */
+      if (this.$route.path.indexOf("/home") !== -1) {
+        this.$bus.$emit("homeItemImgLoad");
+        console.log("homeItemImgLoad");
+      } else if (this.$route.path.indexOf("/detail") !== -1) {
+        this.$bus.$emit("detailItemImgLoad");
+        console.log("detailItemImgLoad");
+      }
+
+      // this.$bus.$emit("itemImgLoad");
+    },
+    itemClick() {
+      this.$router.push("/detail/" + this.goodsItem.iid);
+      // this.$router.push("/detail/" + this.goodsItem.iid);
+    },
+  },
+  computed: {
+    isShow() {
+      return this.goodsItem.image || this.goodsItem.show.img;
     },
   },
 };

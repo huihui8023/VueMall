@@ -11,30 +11,30 @@
     </tab-bar-item>
 
     <tab-bar-item path="/category">
-      <img slot="item-icon" src="@/assets/img/tabbar/home.svg" alt="" />
+      <img slot="item-icon" src="@/assets/img/tabbar/category.svg" alt="" />
       <img
         slot="item-icon-active"
-        src="@/assets/img/tabbar/home_active.svg"
+        src="@/assets/img/tabbar/category_active.svg"
         alt=""
       />
       <div slot="item-name">分类</div>
     </tab-bar-item>
 
     <tab-bar-item path="/shopCar">
-      <img slot="item-icon" src="@/assets/img/tabbar/home.svg" alt="" />
+      <img slot="item-icon" src="@/assets/img/tabbar/shopcart.svg" alt="" />
       <img
         slot="item-icon-active"
-        src="@/assets/img/tabbar/home_active.svg"
+        src="@/assets/img/tabbar/shopcart_active.svg"
         alt=""
       />
       <div slot="item-name">购物车</div>
     </tab-bar-item>
 
-    <tab-bar-item path="/info">
-      <img slot="item-icon" src="@/assets/img/tabbar/home.svg" alt="" />
+    <tab-bar-item path="/profile">
+      <img slot="item-icon" src="@/assets/img/tabbar/profile.svg" alt="" />
       <img
         slot="item-icon-active"
-        src="@/assets/img/tabbar/home_active.svg"
+        src="@/assets/img/tabbar/profile_active.svg"
         alt=""
       />
       <div slot="item-name">我的信息</div>

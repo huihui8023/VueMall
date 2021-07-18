@@ -1,0 +1,30 @@
+.<template>
+  <swiper class="xxx">
+    <swiper-item v-for="(item, index) in topImage" :key="index">
+      <img :src="item" alt="" />
+    </swiper-item>
+  </swiper>
+</template>
+
+<script>
+import { Swiper, SwiperItem } from "@/components/common/swiper/index.js";
+
+export default {
+  name: "DetailSwiper",
+  components: { Swiper, SwiperItem },
+  props: {
+    topImage: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+};
+</script>
+
+<style scoped>
+.xxx {
+  height: 300px;
+}
+</style>
